@@ -1,0 +1,85 @@
+.form {
+    position: relative;
+    border: 1px solid grey;
+    border-radius: 75px;
+}
+
+.form .fa-search {
+    /* position: absolute; */
+    color: white;
+}
+
+.form-control {
+    border: 0;
+    box-shadow: none;
+    border-right: 1px solid grey;
+    border-radius: 0;
+    outline: none;
+}
+
+.form-control:focus {
+    border: 0;
+    box-shadow: none;
+    border-right: 1px solid grey;
+    border-radius: 0;
+    outline: none;
+}
+
+.left-pan {
+    background-color: orange;
+    height: 45px;
+    width: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 2s ease-out 100ms;
+}
+
+.left-pan:hover {
+    background: rgb(255, 136, 0);
+    height: 45px;
+    width: 48px;
+}
+
+.search-bar {
+    width: 600px;
+}
+
+.button {
+    background-color: orange;
+    height: 45px;
+    width: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+}
+
+.button:hover {
+    background-color: rgb(255, 136, 0);
+    height: 45px;
+    width: 48px;
+}
+
+form .search-bar {
+
+    width: 450px;
+    border: 0;
+    outline: 0;
+    border-right: 1px solid grey;
+    border-radius: 0;
+    outline: none;
+}
+
+form .search-bar:focus {
+
+    width: 450px;
+    border: 0;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+
+
+}
