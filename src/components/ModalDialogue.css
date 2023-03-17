@@ -1,0 +1,47 @@
+.modals {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000055;
+    z-index: 10;
+}
+
+.innerDisplay {
+    width: 60%;
+    height: 90%;
+    margin: 2rem auto;
+    background-color: #eee;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.innerDisplay .header {
+    display: flex;
+    background-color: #ccc;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+.btns {
+    border-radius: 50px;
+}
+
+.empty-text {
+    display: block;
+    padding: 2rem;
+    margin: auto;
+}
+
+.sateliteDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0;
+    overflow-y: scroll;
+}

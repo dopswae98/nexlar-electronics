@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('../style/Poppins/Poppins-ExtraBold.ttf');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins Sans";
+    src: url('../style/Poppins/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+* {
+    /*font-family: 'Poppins', sans-serif;*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+:root {
+    --primary: orange;
+    --dark: #21252f;
+    --body: #888;
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+
+}
+
+body {
+    font-family: Sora, 'sans-serif';
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+    color: orange;
+}
+
+.link:hover {
+    color: #699999;
+}
+
+.list-unstyled li a:hover {
+    color: gold;
+}
+
+#carouselHero .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height: 70vh;
+}
+
+#carouselHero .carousel-item:before {
+    content: "";
+    background-image: linear-gradient(to bottom,
+            transparent, rgba(0, 0, 0, 0.3));
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 70vh;
+}
+
+#carousel-caption {
+    height: -100px;
+    color: #0fcaf0;
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: -100px;
+}
+
+.col-md-4 img {
+    object-fit: cover;
+    object-position: center;
+    align-content: center;
+    height: 30vh;
+    width: 60vh;
+}
+
+.row i {
+    font-size: 3rem;
+    color: black;
+}
+
+.iccons i {
+    background-color: #f6f6;
+    border-radius: 100%;
+
+}
+
+/* section-padding {
+    padding:100px 0;
+}*/
+
+.carousel-caption h5 {
+    letter-spacing: 1px;
+    margin-top: 25px;
+    font-size: 45px;
+    text-transform: uppercase;
+
+}
+
+.carousel-caption p {
+    width: 60%;
+    line-height: 1.9;
+    margin: auto;
+    font-size: 18px;
+}
+
+.carousel-caption {
+    bottom: 110px;
+    z-index: 2;
+}
+
+.carousel-item {
+    height: 70vh;
+    min-height: 150px;
+}
+
+.carousel-caption {
+    width: 70%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.carousel-inner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nav-link::after {
+    content: '';
+    width: 0;
+    height: 0.15em;
+    background-color: orange;
+    display: flex;
+    margin: auto;
+    transition: all 0.8s cubic-bezier(0.2, 0.9, 0.4, 1);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .carousel-caption {
+        width: 100%;
+
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .carousel-caption {
+        bottom: 125px;
+        width: 100%;
+
+    }
+
+    .carousel-caption p {
+        width: 100%;
+        font-size: 1px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1px;
+
+    }
+
+    .carousel-caption a {
+        padding: 10px;
+    }
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: orange;
+
+}
+
+#link:hover {
+    color: orange;
+}
+
+.card-effect {
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 25px;
+    height: auto;
+    transition: all 0.35s ease;
+}
+
+.card-effect:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.iconbox {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 32px;
+    border-radius: 100px;
+    flex: none;
+}
+
+.service {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+
+}
+
+.service::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.service:hover .iconbox {
+    background-color: #fff;
+    color: var(--primary);
+}
+
+.service:hover h5,
+.service:hover p {
+    color: #fff;
+}
+
+.service:hover::after {
+    opacity: 1;
+    top: 0;
+}
+
+.details i {
+    color: orange;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    width: 34px;
+    height: 34px;
+    background-color: var(white);
+    border-radius: 2px solid var(white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-left: 5px;
+    transition: all 0.4s ease;
+    border: 2px solid var(white);
+}
+
+.social-iconss a:hover {
+    color: var(blue);
+    background: transparent;
+    border-color: var(blue);
+}
+
+form input.form-control {
+    height: 50px;
+}
+
+form .form-control {
+    border: transparent;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+
+
+.project>img {
+    height: 100%;
+    /*max-height: 210px;*/
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+
+.project {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    max-height: 210px;
+}
+
+.project .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 20, 51, 0.8);
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.project img {
+    transition: all 0.4s ease;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.list-unstyled i {
+    font-size: 1.2rem;
+}
+
+.pricing i {
+    font-size: 20px;
+    color: orange;
+}
+
+#btns {
+    padding: 10px 18px;
+    border-width: 2px;
+    border-radius: 0;
+}
+
+.col-img {
+    background-image: url(../../img/firewood3.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+li a {
+    text-decoration: none;
+    color: orange;
+}
+
+.list-unstyled li {
+    color: orange;
+}
+
+.col-md-12 .btn {
+    border-radius: 0;
+    height: 45px;
+}
+
+.col-md-6 i {
+    color: orange;
+    font-size: 35px;
+}
+
+.list-unstyled li {
+    padding: 6px 0;
+}
+
+.list-unstyled i {
+    color: darkblue
+}
+
+.col-md-8 img {
+    height: 200px;
+    width: 100%;
+}
+
+.lower-img {
+    background-image: url(../../img/crew-8853499.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 200px;
+    border-radius: 5px;
+}
+
+.logo-color {
+    color: orange;
+}
+
+a i:hover {
+    color: orange;
+}
+
+a .fa-facebook {
+    color: darkblue;
+}
+
+a .fa-instagram-square {
+    color: palevioletred;
+}
+
+a .fa-twitter-square {
+    color: #0fcaf0;
+}
