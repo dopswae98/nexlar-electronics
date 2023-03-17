@@ -101,43 +101,41 @@ const FlashCard = () => {
       <Slider {...settings}>
         {Data.productItems.map((productItems, i) => {
           return (
-            <>
-              <div className="box mx-2" key={i}>
-                <div className="product">
-                  <div className="img">
-                    <div className="top d-flex justify-content-between">
-                      <span className="discount">
-                        {productItems.discount}% Off{" "}
-                      </span>
+            <div className="box mx-2" key={i}>
+              <div className="product">
+                <div className="img">
+                  <div className="top d-flex justify-content-between">
+                    <span className="discount">
+                      {productItems.discount}% Off{" "}
+                    </span>
 
-                      <div className="product-like mt-0 m-0 p-0">
-                        <label htmlFor="">0</label> <br />
-                        <i className="far fa-heart"></i>
-                      </div>
-                    </div>
-                    <div className="imgs">
-                      <img src={productItems.cover} alt="" className="imeg" />
+                    <div className="product-like mt-0 m-0 p-0">
+                      <label htmlFor="">0</label> <br />
+                      <i className="far fa-heart"></i>
                     </div>
                   </div>
-                  <div className="product-details">
-                    <h3 class>{productItems.name}</h3>
-                    <div className="rate d-flex">
-                      <i className="fa fa-star"></i>
-                      <i className="fa fa-star"></i>
-                      <i className="fa fa-star"></i>
-                      <i className="fa fa-star"></i>
-                      <i className="fa fa-star"></i>
-                    </div>
-                    <div className="price d-flex justify-content-between">
-                      <h4>{productItems.price}.00</h4>
-                      <button className="mt-0">
-                        <i className="fa fa-plus "></i>
-                      </button>
-                    </div>
+                  <div className="imgs">
+                    <img src={productItems.cover} alt="" className="imeg" />
+                  </div>
+                </div>
+                <div className="product-details">
+                  <h3 className="">{productItems.name}</h3>
+                  <div className="rate d-flex">
+                    <i className="fa fa-star"></i>
+                    <i className="fa fa-star"></i>
+                    <i className="fa fa-star"></i>
+                    <i className="fa fa-star"></i>
+                    <i className="fa fa-star"></i>
+                  </div>
+                  <div className="price d-flex justify-content-between">
+                    <h4>{productItems.price}.00</h4>
+                    <button className="mt-0">
+                      <i className="fa fa-plus "></i>
+                    </button>
                   </div>
                 </div>
               </div>
-            </>
+            </div>
           );
         })}
       </Slider>

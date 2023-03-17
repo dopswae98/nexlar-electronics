@@ -1,8 +1,8 @@
 import React from "react";
-import img1 from "../img/1.jpg";
-import img2 from "../img/2.png";
-import img3 from "../img/3.png";
-import img4 from "../img/4.png";
+import img1 from "../images/SlideCard/slide-1.png";
+import img2 from "../images/SlideCard/slide-2.png";
+import img3 from "../images/SlideCard/slide-3.png";
+import img4 from "../images/SlideCard/slide-4.png";
 
 import slide1 from "../images/SlideCard/slide-1.png";
 import slide2 from "../images/SlideCard/slide-2.png";

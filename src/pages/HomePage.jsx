@@ -4,18 +4,13 @@ import NaxlarNavbar from "../components/NaxlarNavbar";
 import NaxlarNav2 from "./NaxlarNav2";
 import NaxlarNavbar3 from "./NaxlarNavbar3";
 import NaxlarTopNav from "./NaxlarTopNav";
-import HeroSlider from "../components/HeroSlider";
-import SlickAutoplay from "../components/SlickAutoplay";
-import AliceCarouselHero from "../components/AliceCarouselHero";
+//import HeroSlider from "../components/HeroSlider";
+//import SlickAutoplay from "../components/SlickAutoplay";
+//import AliceCarouselHero from "../components/AliceCarouselHero";
 import Slider from "../components/Slider";
 import CategoryList from "./CategoryList";
 import "./NaxlarHomepage.css";
-import {
-  auth,
-  createUserProfileDocument,
-  signInWithGoogle,
-  config,
-} from "../components/firebase.utils";
+//import {auth, createUserProfileDocument, signInWithGoogle, config,} from "../components/firebase.utils";
 import FlashCard from "../components/FlashCard";
 import FlashDeals from "../components/FlashDeals";
 
